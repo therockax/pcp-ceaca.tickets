@@ -41,7 +41,7 @@
         </div>
         <span class="auth-subtitle">PCP · Sistema de Gestión</span>
         <h1 class="auth-title">Centro de Especialidades<br>Anzoátegui</h1>
-        <p class="auth-rif">RIF: J-08023405-4</p>
+        <p class="auth-rif">RIF: J-08001489-8</p>
       </div>
 
       <!-- Formulario de Inicio de Sesión -->
@@ -64,7 +64,7 @@
       <!-- Formulario de Configuración Inicial (Primer Supervisor) -->
       <div id="setup-box" style="display: none;">
         <div style="background: var(--warning-soft); border: 1px solid var(--warning); color: var(--warning); padding: 12px; border-radius: var(--radius-sm); font-size: 11.5px; margin-bottom: 16px; font-weight: 700;">
-          Configuración Inicial: Registra la cuenta administradora del primer Supervisor PCP.
+          Configuración Inicial: Registra la cuenta administrador del Gerente de PCP.
         </div>
         <form onsubmit="handleInitialSetup(event)" class="form-stack">
           <div>
@@ -403,8 +403,8 @@
                 <div class="form-group full-width">
                   <label for="user-role">Rol en el Sistema</label>
                   <select id="user-role">
-                    <option value="tecnico">Inspector Técnico (Atención de Incidencias)</option>
-                    <option value="gerente">Supervisor / Gerente (Control Completo)</option>
+                    <option value="tecnico">Analista / Técnico (Atención de Incidencias)</option>
+                    <option value="gerente">Gerente (Control Completo)</option>
                   </select>
                 </div>
               </div>
@@ -462,18 +462,18 @@
             <div style="display: flex; gap: 10px; flex-wrap: wrap;">
               <button onclick="exportarBaseDatosSQLite()" class="btn btn-primary" style="flex: 1; min-width: 180px;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                Descargar Base de Datos (.db)
+                Descargar BD (.db)
               </button>
               
               <button onclick="document.getElementById('sqlite-file-input').click()" class="btn btn-ghost" style="flex: 1; min-width: 180px;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-                Cargar Base de Datos (.db)
+                Cargar BD (.db)
               </button>
               <input type="file" id="sqlite-file-input" accept=".db,.sqlite,.sqlite3" style="display: none;" onchange="importarBaseDatosSQLite(event)">
 
               <button onclick="borrarBaseDatosCompleta()" class="btn btn-danger" style="flex: 1; min-width: 180px;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
-                Borrar / Reiniciar Base de Datos
+                Borrar / Reiniciar
               </button>
             </div>
           </div>
@@ -556,7 +556,8 @@
 
     <!-- Pie de Página -->
     <footer class="app-footer">
-      PCP · Centro de Especialidades Anzoátegui · RIF: J-08023405-4
+      PCP · Centro de Especialidades Anzoátegui · RIF: J-08001489-8
+              Hecho por: Argenis Xvier Martinez Peñalver
     </footer>
   </div>
 
